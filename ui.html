@@ -1,0 +1,34 @@
+<!-- <h2>Rectangle Creator</h2>
+<p>Count: <input id="count" value="5"></p>
+<button id="create">Create</button>
+<button id="cancel">Cancel</button>
+<script>
+
+document.getElementById('create').onclick = () => {
+  const textbox = document.getElementById('count');
+  const count = parseInt(textbox.value, 10);
+  parent.postMessage({ pluginMessage: { type: 'create-rectangles', count } }, '*')
+}
+
+document.getElementById('cancel').onclick = () => {
+  parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*')
+}
+
+</script> -->
+
+
+<h2>Shadow Creator</h2>
+<p>CSS Shadow: <input id="cssShadow" placeholder="Enter CSS shadow" size="50" style="height: 50px;"></p>
+<button id="createShadow">Create Shadow</button>
+<button id="cancel">Cancel</button>
+<script>
+document.getElementById('createShadow').onclick = () => {
+  const textbox = document.getElementById('cssShadow');
+  const cssShadow = textbox.value;
+  parent.postMessage({ pluginMessage: { type: 'create-shadow', cssShadow } }, '*');
+}
+
+document.getElementById('cancel').onclick = () => {
+  parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*');
+}
+</script>
