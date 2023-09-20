@@ -1,3 +1,7 @@
+# Shadowman is a plugin for Figma that lets you convert a CSS shadow to a Figma shadow effect
+
+
+
 Below are the steps to get your plugin running. You can also find instructions at:
 
   https://www.figma.com/plugin-docs/plugin-quickstart-guide/
